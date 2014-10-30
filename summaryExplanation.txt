@@ -1,0 +1,21 @@
+Column	Explanation
+score file	Name of score input file
+covariates file	Name of covariates input file (optional)
+N	Total sample size (numer of individuals with GPRS)
+Propcase	P; proportion of Target sample that are cases (for case-control data)
+NKr2	Nagelkerke's R2 (pseudo-R2 measure as used in the original paper by Purcell, Wray et al. in Nature; the R2 attributable to the GPRS after fitting covariates)
+pval	P-value for the significance of the regression of GPRS on phenotype
+PopRisk	K; lifetime risk (prevalence) of disease used in converting NKv to liability scale
+h2l_r2n	Proportion of variance explained (R2) by the score on the liability scale. See Lee et al. in Genetic Epidemiology 2012 (PMID: 22714935)
+se_h2l_r2	Standard error of the R2 on the liability scale
+AUC	What we think is the most appropriate estimate of AUC (area under the Receiver Operator Curve) attributed to the score (but there may be a better way to estimate AUC attributable to the score after fitting covariates)
+OR10decile	The odds ratio when comparing top (10th) decile to bottom (1st) decile
+ORDL95	Lower boundary of the 95% CI of ORD
+ORDH95	Upper boundary of the 95% CI of ORD
+..	(the following appear in GPRS_deciles.csv)
+ORD2	The odds ratio when comparing 2nd decile to bottom (1st) decile, i.e. 1st decile is 1, and everything else is relative to that
+ORD2L	Lower boundary of the 95% CI of ORD2
+ORD2H	Upper boundary of the 95% CI of ORD2
+ORD3	The odds ratio when comparing 3rd decile to bottom (1st) decile
+..	
+ORD10	The odds ratio when comparing top (10th) decile to bottom (1st) decile

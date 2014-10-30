@@ -1,0 +1,15 @@
+Column Name	Explanation
+scoreFile	name of the profile score file
+discoverySample	name of the discovery sample
+targetSample	name of the target sample
+discoveryTrait	name of the discovery set trait
+discoveryK	lifetime prevalence of the discovery set trait if disease trait (binary), 0 otherwise
+targetTrait	name of the target set trait
+targetK	lifetime prevalence of the target set trait if disease trait (binary), 0 otherwise
+dtTraitCorrelation	genetic correlation between the trait in the discovery and the target set
+Vg1	proportion of total variance that is explained by genetic effects in discovery sample
+Vg2	proportion of total variance that is explained by genetic effects in target sample
+discoveryCaseN	number of cases in the discovery set (for binary data)
+discoveryControlN	number of controls in the discovery set (for binary data)
+pThreshold	lowest p-value which has been used in the construction of the profile score
+nIndependentSNPs	number of independent SNPs; see note
