@@ -638,7 +638,9 @@ shinyServer(function(input, output, session) {
   processExampleFiles <- function() {
     dir = getExDir()
     # for every file, read as table and write to a dataframe in list "tables"
-    files = list.files(dir, pattern='^example_*')[1:10]
+    files = list.files(dir, pattern='^example_*')
+    # limit to no more than 10 example files, just so it runs faster
+    files = na.omit(files[1:min(10, length(files))])
     tables <- list()
     for (i in 1:length(files)){
       tables[[i]] <- read.table(paste0(dir, files[i]), header = TRUE)
